@@ -289,3 +289,6 @@ app.delete('/usuario/:id', async (req, res) => {
         const [deleteQuery] = await connection.execute('DELETE FROM PI2.usuario WHERE id = ?', [id]);
         return res.status(200).json({ mensagem: 'Usuario excluída com sucesso.' });
 });
+
+
+  
